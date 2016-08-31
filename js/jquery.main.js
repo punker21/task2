@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	createButton();
 	initTime();
+	initTime2();
 	setInterval(function(){
 		initTime();
 	}, 1000);
@@ -22,6 +23,25 @@ function validateTime(time){
 function initTime(){
 	var time = new Date();
 	$('.time').text(time.getHours() + ':' + validateTime(time.getMinutes()) + ':' + validateTime(time.getSeconds()));
+}
+function initTime2(){
+	var time = new Date();
+	var hours = time.getHours();
+	var minutes = time.getMinutes();
+	var seconds = time.getSeconds();
+	$('.time2').text(hours + ':' + minutes + ':' + seconds);
+	setInterval(function(){
+		seconds++;
+		if(seconds == 60){
+			seconds = '0';
+			minutes++;
+		}
+		if(minutes == 60){
+			minutes = '0';
+			hours++;
+		}
+		$('.time2').text(hours + ':' + validateTime(minutes) + ':' + validateTime(seconds));
+	}, 1000)
 }
 
 function createButton(){
