@@ -129,7 +129,7 @@ h4{
 	line-height:20px;
 	text-align:center;
 	padding:0;
-	border:1px solid #000;
+	border:1px solid blue;
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
@@ -144,7 +144,7 @@ h4{
 }
 .create-btn-form input[type="submit"]{
 	float:right;
-	background:#000;
+	background:blue;
 	color:#fff;
 	border:none;
 	height:30px;
