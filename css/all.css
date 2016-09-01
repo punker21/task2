@@ -141,6 +141,9 @@ h4{
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
+	-webkit-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -150,6 +153,11 @@ h4{
 	-webkit-box-shadow:0 0 3px 0 red;
 	box-shadow:0 0 3px 0 red;
 }
+.create-btn-form input.text:hover,
+.create-btn-form input.text:focus{
+	border-color:black;
+}
+.create-btn-form input.text:focus{background-color:#fcfcfc;}
 .create-btn-form input[type="submit"]{
 	float:right;
 	background:blue;
@@ -162,7 +170,11 @@ h4{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+	-webkit-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
 }
+.create-btn-form input[type="submit"]:hover{background:red;}
 .create-btn-form label{
 	margin:0 0 5px;
 	display:block;
